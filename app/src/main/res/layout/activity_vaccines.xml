@@ -53,109 +53,11 @@
             android:padding="16dp">
 
             <LinearLayout
+                android:id="@+id/ll_vaccine_records_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_card_blue"
                 android:orientation="vertical"
-                android:padding="20dp"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Дата: 12 Апреля 2025"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/oswald_medium" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Препарат: Nobivac DHPPi + Rabies"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Статус: Выполнено."
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_card_blue"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Дата: 01 Марта 2026"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/oswald_medium" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Препарат: Бравекто"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Статус: Выполнено. Защита до 24.05.2026."
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_card_green"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Дата: 12 Апреля 2026 (Запланировано)"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/oswald_medium" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Препарат: Nobivac DHPPi + Rabies\n(Комплексная + Бешенство)"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Статус: Ожидается через 2 месяца."
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/oswald_regular"
-                    android:layout_marginTop="4dp"/>
-            </LinearLayout>
+                android:padding="16dp" />
 
         </LinearLayout>
     </ScrollView>
