@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Картинка-заглушка карты -->
+    <ImageView
+        android:id="@+id/iv_map_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Синяя шапка "Ветеринарные клиники" -->
+    <TextView
+        android:id="@+id/tv_map_header"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/header_map_blue"
+        android:text="Ветеринарные клиники"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/oswald_medium"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Нижняя панель навигации -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/nav_bar_blue"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_home"
+            android:alpha="0.3" />
+
+        <ImageView
+            android:id="@+id/nav_diary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_diary" />
+
+        <!-- Иконка гео-метки активна (0.7) -->
+        <ImageView
+            android:id="@+id/nav_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_map"
+            android:alpha="0.7" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
